@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flappy Canvas — A simple Flappy Bird clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Flappy Canvas</h1>
+
+    <!-- The game canvas -->
+    <div class="game-area">
+      <canvas id="game" width="480" height="640" aria-label="Flappy Canvas Game"></canvas>
+
+      <!-- Game overlay shown on start / game-over -->
+      <div id="overlay" class="overlay hidden" role="dialog" aria-hidden="true">
+        <div class="overlay-card">
+          <h2 id="overlay-title">Flappy Canvas</h2>
+          <p id="overlay-sub">Click / Tap or press Space to start</p>
+
+          <!-- credit always visible on overlay -->
+          <p id="overlay-credit">Created and developed by <strong>Lord Meow</strong></p>
+
+          <button id="restart-btn">Restart</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="instructions">Click / Tap or press Space to make the bird jump.</p>
+    <footer>
+      <small>Open index.html in your browser. Ready for GitHub Pages.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
